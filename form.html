@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Записаться на занятие</title>
+      <style>
+         ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         background-color: #fcd8ff;
+         display: flex;
+         }
+         ul li a {
+         display: block;
+         color: rgb(0, 0, 0);
+         padding: 14px 20px;
+         text-decoration: none;
+         }
+         ul li a:hover {
+         background-color: #f1a5e5;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="index.html#shows">Танцевальные шоу</a></li>
+         <li><a href="passport.html">Паспорт & Задача</a></li>
+         <li><a href="https://en.wikipedia.org/wiki/Dance" target="_blank">Вики-статья</a></li>
+         <li><a href="ballet-info.html"><img src="static/ballet.png" height="20px"></a></li>
+         <li><a href="streetstyle-info.html">Уличные стили</a></li>
+         <li><a href="moderndance-info.html">Современные стили</a></li>
+         <li><a style="background-color: #f1a5e5;" href="form.html">Записаться на занятие</a></li>
+      </ul>
+      <h2>Данные для записи</h2>
+      <form class="form" action='https://www.google.com/' method="get" target="_blank">
+         <div class="form-row">
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="surname" value="Билялова" required>
+         </div>
+         <div class="form-row">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" value="Аделия" required>
+         </div>
+         <div class="form-row">
+            <label for="lastname">Отчество</label>
+            <input type="text" id="lastname" name="lastname">
+         </div>
+         <div class="form-row">
+            <label for="group">Номер группы</label>
+            <input type="number" id="group" name="group">
+         </div>
+         <div class="form-row">
+            <label for="birth">Дата рождения</label>
+            <input type="date" id="birth" name="birth">
+         </div>
+         <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+         </div>
+         <div class="form-row">
+            <label for="date">Дата отправки</label>
+            <input type="date" id="date" name="date">
+         </div>
+         <div class="form-row">
+            <label for="dance-style">Стиль танцев</label>
+            <select id="dance-style" name="dance-style">
+               <option value="">Выберите стиль</option>
+               <option value="hiphop">Хип-хоп</option>
+               <option value="contemp">Контемп</option>
+               <option value="vogue">Вог</option>
+            </select>
+         </div>
+         <div class="form-row">
+            <label>Уровень подготовки:</label>
+            <div class="radio-group">
+               <div class="radio-option">
+                  <input type="radio" id="start" name="level" value="start">
+                  <label for="start" class="radio-label">Начальный</label>
+               </div>
+               <div class="radio-option">
+                  <input type="radio" id="medium" name="level" value="medium">
+                  <label for="medium" class="radio-label">Средний</label>
+               </div>
+               <div class="radio-option">
+                  <input type="radio" id="pro" name="level" value="pro">
+                  <label for="pro" class="radio-label">Высокий</label>
+               </div>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="checkbox-group">
+               <input type="checkbox" id="personal" name="personal" value="yes">
+               <label for="personal" class="checkbox-label">
+               Вам есть 18 лет
+               </label>
+            </div>
+         </div>
+         <div class="form-row">
+            <label for="password">Код подтверждения</label>
+            <input type="password" id="password" name="password">
+         </div>
+         <input type="hidden" name="source" value="website">
+         <div class="form-row">
+            <input name="submit" type="Submit" value="Отправить">
+         </div>
+      </form>
+   </body>
+</html>

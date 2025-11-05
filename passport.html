@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Паспорт</title>
+      <style>
+         .container {
+         position: relative;
+         display: inline-block;
+         width: 800px;
+         padding-top: 50px;
+         }
+         .passport {
+         position: absolute;
+         top: 15%;
+         left: 15%;
+         }
+         ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         background-color: #fcd8ff;
+         display: flex;
+         }
+         ul li a {
+         display: block;
+         color: rgb(0, 0, 0);
+         padding: 14px 20px;
+         text-decoration: none;
+         }
+         ul li a:hover {
+         background-color: #f1a5e5;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="index.html#shows">Танцевальные шоу</a></li>
+         <li><a style="background-color: #f1a5e5;" href="passport.html">Паспорт & Задача</a></li>
+         <li><a href="https://en.wikipedia.org/wiki/Dance" target="_blank">Вики-статья</a></li>
+         <li><a href="ballet-info.html"><img src="static/ballet.png" height="20px"></a></li>
+         <li><a href="streetstyle-info.html">Уличные стили</a></li>
+         <li><a href="moderndance-info.html">Современные стили</a></li>
+         <li><a href="form.html">Записаться на занятие</a></li>
+      </ul>
+      <ul>
+         <li><a style="background-color: #f1a5e5;" href="passport.html">Паспорт</a></li>
+         <li><a href="dom-screen.html">DOM_JS. Считываем информацию из DOM</a></li>
+         <li><a href="solution.html">Решение алгоритмической задачи</a></li>
+      </ul>
+      <div class="container">
+         <img src="static/passport.png" alt="passport" style="height: 900px">
+         <div id="pas" class="passport">
+            <p style="margin-left: 100px;">ГУ МВД РОССИИ ПО Г. МОСКВЕ</p>
+            <p id="surname" style="padding-top: 370px; margin-left: 220px;">БИЛЯЛОВА</p>
+            <p id="name" style="padding-top: 20px; margin-left: 220px;">АДЕЛИЯ</p>
+            <p style="padding-top: 2px; margin-left: 220px;">МАРАТОВНА</p>
+            <p id="date-of-birth" style="margin-left: 270px;">06.01.2007</p>
+            <p style="margin-left: 200px;">Г. КАЗАНЬ</p>
+         </div>
+         <p id="for_click">Поменять на латиницу</p>
+      </div>
+   </body>
+   <script src="passport-script.js"></script>
+</html>

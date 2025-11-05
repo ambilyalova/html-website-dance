@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Решение алгоритмической задачи</title>
+      <style>
+         ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         background-color: #fcd8ff;
+         display: flex;
+         }
+         ul li a {
+         display: block;
+         color: rgb(0, 0, 0);
+         padding: 14px 20px;
+         text-decoration: none;
+         }
+         ul li a:hover {
+         background-color: #f1a5e5;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="index.html#shows">Танцевальные шоу</a></li>
+         <li><a style="background-color: #f1a5e5;" href="passport.html">Паспорт & Задача</a></li>
+         <li><a href="https://en.wikipedia.org/wiki/Dance" target="_blank">Вики-статья</a></li>
+         <li><a href="ballet-info.html"><img src="static/ballet.png" height="20px"></a></li>
+         <li><a href="streetstyle-info.html">Уличные стили</a></li>
+         <li><a href="moderndance-info.html">Современные стили</a></li>
+         <li><a href="form.html">Записаться на занятие</a></li>
+      </ul>
+      <ul>
+         <li><a href="passport.html">Паспорт</a></li>
+         <li><a href="dom-screen.html">DOM_JS. Считываем информацию из DOM</a></li>
+         <li><a style="background-color: #f1a5e5;" href="solution.html">Решение алгоритмической задачи</a></li>
+      </ul>
+      <p name="formulation">Известна денежная сумма. Разменять её купюрами 500, 100, 10 и монетой 2 руб., если это возможно.</p>
+      <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+         <div>
+            <li><input type="hidden" name="q" value="search"></li>
+            <li>Формулировка задачи 
+               <br><textarea cols="60" rows="4" id="task" name="formulation">Известна денежная сумма. Разменять её купюрами 500, 100, 10 и монетой 2 руб., если это возможно.</textarea>
+            </li>
+            <li>Сумма: <input id="amount" name="amount"  type="number"></li>
+            <li>Результат решения задачи: <input style="height: 16px;" id="result" name="result" value="не определен"></li>
+            <li><input id="verify" type="button" value="Проверить"></li>
+            <li><input id="send" type="button" value="Отправить"></li>
+         </div>
+      </form>
+   </body>
+   <script src="solution-script.js"></script>
+</html>
